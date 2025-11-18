@@ -25,6 +25,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -228,8 +229,17 @@ export default function Portfolio() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/90" />
 
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-5xl sm:text-7xl font-bold mb-6">
-            Hi, I&apos;m <span className="text-blue-400">Arindam Jana</span>
+          <h1 className="text-5xl sm:text-7xl font-medium mb-6">
+            Hi, I&apos;m{" "}
+            <span className="text-blue-400">
+              <Typewriter
+                options={{
+                  strings: ["Arindam Jana", "A Front-End Developer"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
           </h1>
 
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
