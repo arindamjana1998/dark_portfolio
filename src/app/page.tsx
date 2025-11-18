@@ -511,7 +511,7 @@ export default function Portfolio() {
           </Card>
 
           <div className="text-center mt-12">
-            <div className="flex justify-center space-x-6">
+            <div className="flex flex-col items-center space-y-4 md:flex-row md:justify-center md:space-x-6 md:space-y-0">
               <a
                 href="mailto:arindampcm@gmail.com"
                 className="flex items-center space-x-2 text-gray-300 hover:text-white"
